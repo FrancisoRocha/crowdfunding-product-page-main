@@ -1,0 +1,8 @@
+:root{
+    --commissioner: "Commissioner", sans-serif;
+    --color-primary: hsl(176, 50%, 47%);
+    --color-hover: hsl(176, 72%, 28%);
+    --color-text-primary: hsl(0, 0%, 0%);
+    --color-btn-text: hsl(0, 0%, 48%);
+    --color-text-secundary: hsl(0, 0%, 100%);
+}
