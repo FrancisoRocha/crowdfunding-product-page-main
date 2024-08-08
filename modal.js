@@ -1,7 +1,7 @@
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const openBoton = document.querySelector('.btn-open');
-const closeBoton = document.querySelector('.btn-close');
+const closeBoton = document.querySelector('.material-symbols-outlined');
 
 
 const btnOpen = function (){

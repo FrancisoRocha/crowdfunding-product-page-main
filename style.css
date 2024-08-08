@@ -5,7 +5,7 @@
     --color-text-primary: hsl(0, 0%, 0%);
     --color-btn-text: hsl(0, 0%, 48%);
     --color-text-secundary: hsl(0, 0%, 100%);
-    --color-circle: #2F2F2F;
+    --color-circle: #2f2f2f;
 }
 
 /*MENU DE NAVEGACIO*/
@@ -13,7 +13,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: #FAFAFA;
+    background: #fafafa;
 }
 
 .navbar {
@@ -86,7 +86,6 @@ a {
     margin: 0px auto;
     top: 300px;
     border-radius: 10px;
-    
 }
 
 .subtitle {
@@ -105,6 +104,7 @@ a {
     font-size: 16px;
     color: var(--color-btn-text);
 }
+
 .btn-open {
     display: flex;
     justify-content: center;
@@ -173,41 +173,45 @@ a {
     margin-left: 70px;
     margin-top: -40px;
 }
+
 /*SECCION DEL MODAL*/
 .modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.4rem;
-  width: 450px;
-  padding: 1.3rem;
-  min-height: 250px;
-  position: absolute;
-  top: 20%;
-  background-color: rgb(246, 106, 106);
-  border: 1px solid #ddd;
-  border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 730px;
+    height: 905px;
+    position: absolute;
+    background-color: var(--color-text-secundary);
+    top: -95px;
+    border: none;
+    border-radius: 10px;
 }
 
-.modal .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.text-modal-one{
+    display: flex;
+    font-size: 24px;
+    margin-top: 45px;
+    font-family: var(--commissioner);
+    font-weight: bold;
+    margin-left: 35px;
+}
+.material-symbols-outlined {
+    cursor: pointer;
+    margin-left: 430px;
+    margin-top: 20px;
+}
+.text-modal-two{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    font-size: 16px;
+    margin-left: 48px;
+    font-family: var(--commissioner);
+    color: var(--color-btn-text);
+
 }
 
-.modal input {
-  padding: 0.7rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-.btn-close {
-    transform: translate(10px, -20px);
-    padding: 0.5rem 0.7rem;
-    background: #eee;
-    border-radius: 50%;
-  }
-  .overlay {
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -216,16 +220,140 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     z-index: 4;
-  }
-  .modal {
+}
+
+.modal {
     z-index: 5;
-  }
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
-    /*CUADRO DOS*/
+}
+/*CARD MODAL UNO*/
+.flex{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.card-madal-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 634px;
+    height: 157px;
+    top: 155px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+}
+.checkmark-uno{
+    display: flex;
+    margin-top: -20px;
+    font-family: var(--commissioner);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.text-card-mondal-one{
+    display: flex;
+    font-size: 15px;
+    color: var(--color-btn-text);
+    font-family: var(--commissioner);
+    width: 530px;
+    height: 56px;
+    margin-top: 10px;
+    line-height: 30px;
+    margin-left: 15px;
+}
+.input-one{
+    display: flex;
+    margin-top: -85px;
+    margin-left: -40px;
+    width: 15px;
+    height: 15px;
+}
+/*CARD MODAL DOS*/
+.card-madal-two{
+    display: flex;
+    position: absolute;
+    width: 634px;
+    height: 157px;
+    top: 355px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+}
+.card-input-two{
+    display: flex;
+    flex-direction: row;
+}
+.card-input-two p{
+    margin: 0;
+}
+.checkmark-dos{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-family: var(--commissioner);
+    font-size: 16px;
+    font-weight: bold;
+}
+.precio-dos{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    font-family: var(--commissioner);
+    font-size: 16px;
+    color: var(--color-primary);
+}
+.cerouno{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 540px;
+    font-size: 18px;
+    font-family: var(--commissioner);
+    font-weight: bold;
+}
+.left-two{
+    display: flex;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #a0a0a0;
+    font-weight: 400;
+    font-family: var(--commissioner);
+}
+.input-two{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.text-card-mondal-two{
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    color: var(--color-btn-text);
+    font-family: var(--commissioner);
+    width: 530px;
+    height: 56px;
+    top: 70px;
+    left: 50px;
+    line-height: 30px;
+}
+/* .price-enter{
+    display: flex;
+    flex-direction: row;
+} */
+/*CUADRO DOS*/
 .container-two {
     display: flex;
     justify-content: center;
@@ -241,7 +369,7 @@ a {
     background: var(--color-text-secundary);
     margin-top: 220px;
     border-radius: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #979797;
 }
 
 .stat {
@@ -313,15 +441,17 @@ a {
     margin-top: 460px;
     margin-bottom: 70px;
     border-radius: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #979797;
 }
-.text-three{
+
+.text-three {
     font-family: var(--commissioner);
     font-size: 20px;
     font-weight: bold;
     padding: 50px;
 }
-.text-for{
+
+.text-for {
     display: flex;
     width: 634px;
     height: 248px;
@@ -332,21 +462,24 @@ a {
     margin-left: 45px;
     line-height: 30px;
 }
+
 /*TARJETA UNO*/
-.card-one{
-    border: 1px solid #7A7A7A;
+.card-one {
+    border: 1px solid #7a7a7a;
     width: 634px;
     height: 248px;
     margin: 0px auto;
     border-radius: 10px;
 }
-.text-bam{
+
+.text-bam {
     padding: 30px;
     font-family: var(--commissioner);
     font-size: 18px;
     font-weight: bold;
 }
-.texto-card-one{
+
+.texto-card-one {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -357,7 +490,8 @@ a {
     font-weight: 500;
     color: var(--color-primary);
 }
-.ergonomic{
+
+.ergonomic {
     display: flex;
     margin: 0px auto;
     width: 570px;
@@ -368,14 +502,16 @@ a {
     color: var(--color-btn-text);
     line-height: 30px;
 }
-.numero-one{
+
+.numero-one {
     display: flex;
     font-family: var(--commissioner);
     font-size: 32px;
     font-weight: bold;
     padding: 33px;
 }
-.span{
+
+.span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,7 +521,8 @@ a {
     font-weight: 300;
     margin-left: 10px;
 }
-.btn-two{
+
+.btn-two {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,41 +539,47 @@ a {
     margin-left: 446px;
     transition: all 500ms;
 }
+
 .btn-two:hover {
     cursor: pointer;
     transition: all 500ms;
     background: var(--color-hover);
 }
-.card-two{
-    border: 1px solid #7A7A7A;
+
+.card-two {
+    border: 1px solid #7a7a7a;
     width: 634px;
     height: 248px;
     margin: 0px auto;
     border-radius: 10px;
     margin-top: 50px;
 }
-.text-edition{
+
+.text-edition {
     padding: 30px;
     font-family: var(--commissioner);
     font-size: 18px;
     font-weight: bold;
 }
-.card-three{
-    border: 1px solid #7A7A7A;
+
+.card-three {
+    border: 1px solid #7a7a7a;
     width: 634px;
     height: 248px;
     margin: 0px auto;
     border-radius: 10px;
     margin-top: 50px;
 }
-.text-mahogany{
+
+.text-mahogany {
     padding: 30px;
     font-family: var(--commissioner);
     font-size: 18px;
     font-weight: bold;
     color: rgba(151, 151, 151, 0.6);
 }
-.texto-card-three{
+
+.texto-card-three {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -447,7 +590,8 @@ a {
     font-weight: 500;
     color: rgba(60, 179, 171, 0.4);
 }
-.member{
+
+.member {
     display: flex;
     margin: 0px auto;
     width: 570px;
@@ -459,7 +603,8 @@ a {
     line-height: 30px;
     color: rgba(151, 151, 151, 0.6);
 }
-.numero-cero{
+
+.numero-cero {
     display: flex;
     font-family: var(--commissioner);
     font-size: 32px;
@@ -467,7 +612,8 @@ a {
     padding: 33px;
     color: rgba(151, 151, 151, 0.6);
 }
-.span-left{
+
+.span-left {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +624,8 @@ a {
     margin-left: 10px;
     color: rgba(151, 151, 151, 0.6);
 }
-.btn-three{
+
+.btn-three {
     display: flex;
     justify-content: center;
     align-items: center;
